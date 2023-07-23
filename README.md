@@ -8,26 +8,26 @@ This is a hand-controlled dodging game built with Pygame, where the player uses 
 ## Features
 
 - Real-time hand tracking using the Mediapipe library.
-- Hand gestures mapped to player movement for an immersive gaming experience.
+- Hand gestures mapped to the player's movement for an immersive gaming experience.
 - Dynamic spawning of projectiles from the top of the screen.
 - Score tracking for each successful dodge of a projectile.
 - Socket communication
 
 ## Communication using Sockets
 
-This game utilizes TCP sockets for communication between the hand tracking module and the game module. The hand tracking module continuously sends the x-coordinate of the index finger to the game module, which uses this information to control the player's movement.
+This game utilizes TCP sockets for communication between the hand-tracking and game modules. The hand tracking module continuously sends the x-coordinate of the index finger to the game module, which uses this information to control the player's movement.
 
 The communication flow is as follows:
 
-1. The hand tracking module runs in parallel with the game module.
+1. The hand-tracking module runs in parallel with the game module.
 2. The hand tracking module tracks the hand movements and extracts the x-coordinate of the index finger.
-3. The hand tracking module establishes a TCP connection with the game module.
+3. The hand-tracking module establishes a TCP connection with the game module.
 4. It sends the x-coordinate of the index finger through the TCP socket to the game module.
 5. The game module receives the x-coordinate and updates the player's position accordingly.
 6. The game module renders the updated game frame based on the player's position.
 7. Steps 4-6 are repeated continuously to provide real-time control of the player.
 
-The use of sockets allows for seamless communication and synchronization between the hand tracking module and the game module, enabling the player to control the game in real-time using hand gestures.
+Using sockets allows for seamless communication and synchronization between the hand-tracking module and the game module, enabling the player to control the game in real-time using hand gestures.
 
 Please note that the socket communication is implemented using the Python `socket` library, and the necessary code for establishing and managing the socket connection is already provided in the project files.
 
@@ -57,11 +57,11 @@ $ pip install -r requirements.txt
 
 1. Run the hand tracking code:
 - Open a terminal and navigate to the directory where you cloned/downloaded this repository.
-- Run the following command to start the hand tracking code:
+- Run the following command to start the hand-tracking code:
   ```
   $ python hand_tracking.py
   ```
-- Keep this hand tracking code running in the background while playing the game.
+- Keep this hand-tracking code running in the background while playing the game.
 
 2. Run the game:
 - Open a new terminal and navigate to the directory where you cloned/downloaded this repository.
@@ -78,8 +78,8 @@ $ pip install -r requirements.txt
 
 ## Customization
 
-Feel free to customize the game to suit your needs or add additional features. The code provides a solid foundation that can be extended or modified to showcase your creativity and programming skills. You can experiment with different game mechanics, graphics, sound effects, or even implement multiplayer functionality.
+Feel free to customize the game to suit your needs or add additional features. The code provides a solid foundation that can be extended or modified to showcase your creativity and programming skills. You can experiment with different game mechanics, graphics, and sound effects, or even implement multiplayer functionality.
 
 ## Showcase
 
-This project demonstrates the integration of computer vision and game development, highlighting skills in Python programming, computer graphics, and human-computer interaction. The use of hand tracking technology adds an innovative and interactive element to the game, making it a compelling showcase for universities or potential employers.
+This project demonstrates the integration of computer vision and game development, highlighting skills in Python programming, computer graphics, and human-computer interaction. Hand-tracking technology adds an innovative and interactive element to the game, making it a compelling showcase for universities or potential employers.
