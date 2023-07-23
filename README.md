@@ -33,7 +33,7 @@ Please note that the socket communication is implemented using the Python `socke
 
 ## Requirements
 
-- Python 3.7 or higher
+- Python 3.7 - 3.9 (higher versions don't work with this Mediapipe code)
 - Pygame library
 - Mediapipe library
 
