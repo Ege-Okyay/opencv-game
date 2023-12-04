@@ -82,4 +82,4 @@ Feel free to customize the game to suit your needs or add additional features. T
 
 ## Showcase
 
-This project demonstrates the integration of computer vision and game development, highlighting skills in Python programming, computer graphics, and human-computer interaction. Hand-tracking technology adds an innovative and interactive element to the game, making it a compelling showcase for universities or potential employers.
+This project demonstrates the integration of computer vision and game development, highlighting skills in Python programming, computer graphics, and human-computer interaction. Hand-tracking technology adds an innovative and interactive element to the game.
